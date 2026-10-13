@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VESOMO | Аренда 90 м² — Красный проспект, 186</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        vesomo: {
+                            orange: '#FF5A00',
+                            orangeHover: '#E04E00',
+                            dark: '#16181D',
+                            graphite: '#20242C',
+                            grayDark: '#2D323E',
+                            grayBorder: '#3C4352',
+                            grayLight: '#F3F4F6',
+                            muted: '#94A3B8'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Manrope', 'system-ui', 'sans-serif'],
+                        mono: ['Space Grotesk', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            .no-print { display: none !important; }
+            body { background: #fff !important; color: #000 !important; }
+            .print-card { break-inside: avoid; border: 1px solid #ddd !important; }
+        }
+        .lightbox-open { overflow: hidden; }
+        .glass-nav {
+            background: rgba(22, 24, 29, 0.88);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-[#0F1115] text-slate-100 antialiased font-sans selection:bg-[#FF5A00] selection:text-white">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-vesomo-grayBorder/40 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <a href="https://vesomo.ru/" target="_blank" class="flex items-center space-x-2 group">
+                    <div class="w-10 h-10 rounded-xl bg-vesomo-orange flex items-center justify-center font-bold text-white text-xl shadow-lg shadow-vesomo-orange/25 group-hover:scale-105 transition-transform">
+                        V
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-lg tracking-wider text-white">VESOMO</span>
+                        <span class="text-[10px] tracking-widest text-vesomo-muted uppercase">Commercial Real Estate</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-300">
+                <a href="#overview" class="hover:text-vesomo-orange transition-colors">Обзор</a>
+                <a href="#params" class="hover:text-vesomo-orange transition-colors">Параметры</a>
+                <a href="#location" class="hover:text-vesomo-orange transition-colors">Локация и Трафик</a>
+                <a href="#gallery" class="hover:text-vesomo-orange transition-colors">Галерея</a>
+                <a href="#calculator" class="hover:text-vesomo-orange transition-colors">Калькулятор</a>
+            </div>
+
+            <div class="flex items-center space-x-3">
+                <button onclick="window.print()" class="no-print hidden sm:inline-flex items-center space-x-2 bg-vesomo-grayDark/80 hover:bg-vesomo-grayDark border border-vesomo-grayBorder/60 px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-200 transition-all">
+                    <i data-lucide="printer" class="w-4 h-4 text-vesomo-orange"></i>
+                    <span>В PDF</span>
+                </button>
+                <a href="tel:+79139167210" class="inline-flex items-center space-x-2 bg-vesomo-orange hover:bg-vesomo-orangeHover text-white px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold shadow-lg shadow-vesomo-orange/20 transition-all">
+                    <i data-lucide="phone-call" class="w-4 h-4"></i>
+                    <span>Позвонить</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="overview" class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-b from-vesomo-dark to-[#0F1115]">
+        <div class="absolute inset-0 opacity-20 pointer-events-none">
+            <div class="absolute -top-40 -right-40 w-96 h-96 bg-vesomo-orange rounded-full filter blur-[120px]"></div>
+            <div class="absolute top-1/2 -left-40 w-96 h-96 bg-vesomo-grayBorder rounded-full filter blur-[140px]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-vesomo-orange/15 border border-vesomo-orange/30 px-3.5 py-1.5 rounded-full">
+                        <span class="w-2 h-2 rounded-full bg-vesomo-orange animate-pulse"></span>
+                        <span class="text-xs font-bold text-vesomo-orange uppercase tracking-wider">Прямое предложение от собственника</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Торговое помещение <span class="text-vesomo-orange underline decoration-vesomo-orange/40 decoration-4">90 м²</span> на 1 линии
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed">
+                        Новосибирск, <span class="text-white font-semibold">Красный проспект, 186</span>. Сверхвысокий трафик у метро «Заельцовская» напротив ТРК «Роял Парк».
+                    </p>
+
+                    <!-- Fast specs cards -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+                        <div class="bg-vesomo-graphite/80 border border-vesomo-grayBorder/60 p-4 rounded-2xl">
+                            <span class="text-xs text-vesomo-muted block mb-1">Ставка</span>
+                            <span class="text-2xl font-bold font-mono text-vesomo-orange">3 000 ₽</span>
+                            <span class="text-[11px] text-slate-400 block">за м² / месяц</span>
+                        </div>
+                        <div class="bg-vesomo-graphite/80 border border-vesomo-grayBorder/60 p-4 rounded-2xl">
+                            <span class="text-xs text-vesomo-muted block mb-1">Итого в месяц</span>
+                            <span class="text-2xl font-bold font-mono text-white">270 000 ₽</span>
+                            <span class="text-[11px] text-slate-400 block">фиксированная ставка</span>
+                        </div>
+                        <div class="bg-vesomo-graphite/80 border border-vesomo-grayBorder/60 p-4 rounded-2xl col-span-2 sm:col-span-1">
+                            <span class="text-xs text-vesomo-muted block mb-1">Эл. мощность</span>
+                            <span class="text-2xl font-bold font-mono text-white">38 кВт</span>
+                            <span class="text-[11px] text-emerald-400 block">выделенная мощность</span>
+                        </div>
+                    </div>
+
+                    <!-- Call to action buttons -->
+                    <div class="pt-4 flex flex-wrap gap-3">
+                        <a href="https://wa.me/79139167210?text=Здравствуйте!%20Интересует%20аренда%20помещения%2090%20м2%20на%20Красном%20проспекте,%20186" target="_blank" class="inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-3 rounded-xl font-bold text-sm shadow-lg shadow-emerald-600/20 transition-all">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://t.me/share/url?url=https://vesomo.ru&text=Помещение%2090м2%20Красный%20проспект%20186" target="_blank" class="inline-flex items-center space-x-2 bg-sky-600 hover:bg-sky-500 text-white px-5 py-3 rounded-xl font-bold text-sm shadow-lg shadow-sky-600/20 transition-all">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="#calculator" class="inline-flex items-center space-x-2 bg-vesomo-grayDark hover:bg-vesomo-grayBorder text-slate-200 px-5 py-3 rounded-xl font-bold text-sm transition-all border border-vesomo-grayBorder">
+                            <i data-lucide="calculator" class="w-4 h-4 text-vesomo-orange"></i>
+                            <span>Рассчитать затраты</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero preview image -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative group rounded-3xl overflow-hidden border border-vesomo-grayBorder/80 bg-vesomo-graphite shadow-2xl">
+                        <img src="IMG_7163.jpg" alt="Главный вход и витрина" class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer" onclick="openLightbox('IMG_7163.jpg')">
+                        <div class="absolute inset-0 bg-gradient-to-t from-vesomo-dark via-transparent to-transparent opacity-80 pointer-events-none"></div>
+                        <div class="absolute bottom-5 left-5 right-5 flex items-center justify-between">
+                            <div>
+                                <span class="bg-vesomo-orange text-white text-xs px-2.5 py-1 rounded-md font-bold uppercase tracking-wide">1 Этаж</span>
+                                <p class="text-white text-sm font-semibold mt-1">Отдельный вход • Витраж</p>
+                            </div>
+                            <button onclick="openLightbox('IMG_7163.jpg')" class="bg-black/60 hover:bg-black/90 p-3 rounded-xl text-white backdrop-blur-md transition-all">
+                                <i data-lucide="maximize-2" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="params" class="py-20 bg-[#14161C] border-y border-vesomo-grayBorder/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-vesomo-orange font-mono text-xs uppercase tracking-widest font-bold">Характеристики объекта</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Готовность под любой формат ритейла и услуг</h2>
+                <p class="text-slate-400 mt-3 text-sm sm:text-base">Качественная чистовая отделка, высокие потолки, подведенные коммуникации и отсутствие обременений.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-vesomo-graphite/70 border border-vesomo-grayBorder/60 p-6 rounded-2xl hover:border-vesomo-orange/50 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-vesomo-orange/15 border border-vesomo-orange/30 flex items-center justify-center text-vesomo-orange mb-5">
+                        <i data-lucide="zap" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">38 кВт мощности</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Редкое преимущество для помещения 90 м². Позволяет открыть общепит, кофейню полного цикла, пекарню или клинику без ограничений.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-vesomo-graphite/70 border border-vesomo-grayBorder/60 p-6 rounded-2xl hover:border-vesomo-orange/50 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-vesomo-orange/15 border border-vesomo-orange/30 flex items-center justify-center text-vesomo-orange mb-5">
+                        <i data-lucide="door-open" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">1 этаж и витрины</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Остекленная входная группа и панорамное витринное окно прямо на пешеходный коридор. Отличная видимость рекламной вывески.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-vesomo-graphite/70 border border-vesomo-grayBorder/60 p-6 rounded-2xl hover:border-vesomo-orange/50 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-vesomo-orange/15 border border-vesomo-orange/30 flex items-center justify-center text-vesomo-orange mb-5">
+                        <i data-lucide="layers" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Чистовая отделка</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Износостойкий пол тераццо / керамогранитная крошка, подвесные потолки, встроенный светодиодный свет, вентиляция и кондиционирование.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-vesomo-graphite/70 border border-vesomo-grayBorder/60 p-6 rounded-2xl hover:border-vesomo-orange/50 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-vesomo-orange/15 border border-vesomo-orange/30 flex items-center justify-center text-vesomo-orange mb-5">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Юр. чистота > 50 м</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Расстояние по кратчайшему пешеходному пути до ближайших медучреждений превышает 50 метров. Подходит под получение алкогольной лицензии.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="py-20 bg-[#0F1115]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-vesomo-orange font-mono text-xs uppercase tracking-widest font-bold">Синергия и локация</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Пешеходный трафик максимальной концентрации</h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Объект расположен на главной магистрали правого берега — Красном проспекте. В радиусе 150-300 метров сосредоточены главные точки притяжения Заельцовского района:
+                    </p>
+
+                    <!-- Points List -->
+                    <div class="space-y-3.5">
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-vesomo-graphite/60 border border-vesomo-grayBorder/40">
+                            <div class="p-2.5 rounded-lg bg-red-500/10 text-red-400 mt-1">
+                                <i data-lucide="navigation-2" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-bold text-white">Станция метро «Заельцовская»</h4>
+                                <p class="text-xs text-slate-400">Конечная станция Ленинской ветки, крупнейший транспортный хаб города с суточным трафиком в десятки тысяч человек.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-vesomo-graphite/60 border border-vesomo-grayBorder/40">
+                            <div class="p-2.5 rounded-lg bg-amber-500/10 text-amber-400 mt-1">
+                                <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-bold text-white">ТРК «Роял Парк» & ТЦ «Европа»</h4>
+                                <p class="text-xs text-slate-400">Флагманские торгово-развлекательные комплексы с постоянным платежеспособным потоком покупателей.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-vesomo-graphite/60 border border-vesomo-grayBorder/40">
+                            <div class="p-2.5 rounded-lg bg-blue-500/10 text-blue-400 mt-1">
+                                <i data-lucide="building" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-bold text-white">Бизнес-центр «Айсберг»</h4>
+                                <p class="text-xs text-slate-400">Офисный кластер, формирующий стабильный дневной спрос в будние дни (ланчи, услуги, кофе, покупки).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive map badge card -->
+                <div class="lg:col-span-6">
+                    <div class="relative bg-vesomo-graphite rounded-3xl border border-vesomo-grayBorder/80 p-8 shadow-2xl overflow-hidden">
+                        <div class="absolute -right-16 -top-16 w-56 h-56 bg-vesomo-orange/10 rounded-full blur-3xl"></div>
+                        
+                        <div class="flex items-center justify-between mb-8 pb-4 border-b border-vesomo-grayBorder/40">
+                            <div>
+                                <span class="text-xs text-vesomo-muted uppercase font-mono">Карта соответствия нормам</span>
+                                <h3 class="text-xl font-bold text-white">Лицензирование объекта</h3>
+                            </div>
+                            <span class="px-3 py-1 bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 rounded-full text-xs font-bold">100% Соответствие</span>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-vesomo-dark/90 p-5 rounded-2xl border border-vesomo-grayBorder/60">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400"></i>
+                                    <span class="font-bold text-sm text-white">Дистанция до медицинских центров</span>
+                                </div>
+                                <p class="text-xs text-slate-300 leading-relaxed">
+                                    По кратчайшему пешеходному пути расстояние до ближайших объектов здравоохранения составляет <span class="text-vesomo-orange font-bold">более 50 метров</span>. Это снимает жесткие ограничения 171-ФЗ для баров, алкомаркетов, винных бутиков и ресторанов.
+                                </p>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="p-4 rounded-xl bg-vesomo-dark/50 border border-vesomo-grayBorder/40">
+                                    <p class="text-xs text-vesomo-muted">Автомобильный трафик</p>
+                                    <p class="text-lg font-bold text-white mt-1">> 45 000 авто/сутки</p>
+                                </div>
+                                <div class="p-4 rounded-xl bg-vesomo-dark/50 border border-vesomo-grayBorder/40">
+                                    <p class="text-xs text-vesomo-muted">Видимость с Красного пр.</p>
+                                    <p class="text-lg font-bold text-white mt-1">100% прямая видимость</p>
+                                </div>
+                            </div>
+
+                            <a href="https://yandex.ru/maps/?text=Новосибирск+Красный+проспект+186" target="_blank" class="w-full inline-flex items-center justify-center space-x-2 bg-vesomo-grayDark hover:bg-vesomo-grayBorder text-white py-3.5 rounded-xl text-sm font-semibold border border-vesomo-grayBorder transition-all">
+                                <i data-lucide="map-pin" class="w-4 h-4 text-vesomo-orange"></i>
+                                <span>Открыть локацию на Яндекс.Картах</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-[#14161C] border-t border-vesomo-grayBorder/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-vesomo-orange font-mono text-xs uppercase tracking-widest font-bold">Фотогалерея помещения</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Реальные фотографии объекта</h2>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400 mt-2 md:mt-0">Нажмите на любое фото для полноэкранного просмотра</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Photo item 1 -->
+                <div class="relative group rounded-2xl overflow-hidden bg-vesomo-graphite border border-vesomo-grayBorder/60 cursor-pointer h-72 shadow-lg" onclick="openLightbox('IMG_7163.jpg')">
+                    <img src="IMG_7163.jpg" alt="Входная зона и витраж" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="bg-vesomo-orange text-white text-xs px-3 py-1.5 rounded-lg font-bold flex items-center space-x-1">
+                            <i data-lucide="zoom-in" class="w-4 h-4"></i>
+                            <span>Увеличить</span>
+                        </span>
+                    </div>
+                    <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur px-2.5 py-1 rounded text-[11px] text-white">Входная группа и витрина</div>
+                </div>
+
+                <!-- Photo item 2 -->
+                <div class="relative group rounded-2xl overflow-hidden bg-vesomo-graphite border border-vesomo-grayBorder/60 cursor-pointer h-72 shadow-lg" onclick="openLightbox('IMG_7161.jpg')">
+                    <img src="IMG_7161.jpg" alt="Основной торговый зал" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="bg-vesomo-orange text-white text-xs px-3 py-1.5 rounded-lg font-bold flex items-center space-x-1">
+                            <i data-lucide="zoom-in" class="w-4 h-4"></i>
+                            <span>Увеличить</span>
+                        </span>
+                    </div>
+                    <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur px-2.5 py-1 rounded text-[11px] text-white">Основной зал / Пол тераццо</div>
+                </div>
+
+                <!-- Photo item 3 -->
+                <div class="relative group rounded-2xl overflow-hidden bg-vesomo-graphite border border-vesomo-grayBorder/60 cursor-pointer h-72 shadow-lg" onclick="openLightbox('IMG_7162.jpg')">
+                    <img src="IMG_7162.jpg" alt="Общий план помещения" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="bg-vesomo-orange text-white text-xs px-3 py-1.5 rounded-lg font-bold flex items-center space-x-1">
+                            <i data-lucide="zoom-in" class="w-4 h-4"></i>
+                            <span>Увеличить</span>
+                        </span>
+                    </div>
+                    <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur px-2.5 py-1 rounded text-[11px] text-white">Широкий план зала</div>
+                </div>
+
+                <!-- Photo item 4 -->
+                <div class="relative group rounded-2xl overflow-hidden bg-vesomo-graphite border border-vesomo-grayBorder/60 cursor-pointer h-72 shadow-lg" onclick="openLightbox('IMG_7164.jpg')">
+                    <img src="IMG_7164.jpg" alt="Зона ресепшн / брендированная стена" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="bg-vesomo-orange text-white text-xs px-3 py-1.5 rounded-lg font-bold flex items-center space-x-1">
+                            <i data-lucide="zoom-in" class="w-4 h-4"></i>
+                            <span>Увеличить</span>
+                        </span>
+                    </div>
+                    <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur px-2.5 py-1 rounded text-[11px] text-white">Стена под бренд-зону</div>
+                </div>
+
+                <!-- Photo item 5 -->
+                <div class="relative group rounded-2xl overflow-hidden bg-vesomo-graphite border border-vesomo-grayBorder/60 cursor-pointer h-72 shadow-lg" onclick="openLightbox('IMG_7166.jpg')">
+                    <img src="IMG_7166.jpg" alt="Дизайнерское освещение" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="bg-vesomo-orange text-white text-xs px-3 py-1.5 rounded-lg font-bold flex items-center space-x-1">
+                            <i data-lucide="zoom-in" class="w-4 h-4"></i>
+                            <span>Увеличить</span>
+                        </span>
+                    </div>
+                    <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur px-2.5 py-1 rounded text-[11px] text-white">Трековое освещение</div>
+                </div>
+
+                <!-- Photo item 6 -->
+                <div class="relative group rounded-2xl overflow-hidden bg-vesomo-graphite border border-vesomo-grayBorder/60 cursor-pointer h-72 shadow-lg" onclick="openLightbox('IMG_7156.jpg')">
+                    <img src="IMG_7156.jpg" alt="Пространство подсобных помещений" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="bg-vesomo-orange text-white text-xs px-3 py-1.5 rounded-lg font-bold flex items-center space-x-1">
+                            <i data-lucide="zoom-in" class="w-4 h-4"></i>
+                            <span>Увеличить</span>
+                        </span>
+                    </div>
+                    <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur px-2.5 py-1 rounded text-[11px] text-white">Внутренняя геометрия</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator" class="py-20 bg-[#0F1115]">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-vesomo-graphite border border-vesomo-grayBorder/80 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-80 h-80 bg-vesomo-orange/5 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <span class="text-vesomo-orange font-mono text-xs uppercase tracking-widest font-bold">Экономика проекта</span>
+                    <h2 class="text-3xl font-extrabold text-white mt-1">Калькулятор бюджета аренды</h2>
+                    <p class="text-slate-400 text-xs sm:text-sm mt-2">Скорректируйте срок аренды и планируемые коммунальные расходы для точного планирования денежного потока бизнеса.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <!-- Controls -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span class="text-slate-300">Период договора:</span>
+                                <span class="font-bold text-vesomo-orange font-mono" id="periodVal">11 месяцев</span>
+                            </div>
+                            <input id="periodSlider" type="range" min="1" max="36" value="11" class="w-full h-2 bg-vesomo-grayDark rounded-lg appearance-none cursor-pointer accent-[#FF5A00]">
+                            <div class="flex justify-between text-[11px] text-slate-500 mt-1">
+                                <span>1 мес</span>
+                                <span>11 мес (стандарт)</span>
+                                <span>36 мес (долгосрок)</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm mb-2">
+                                <span class="text-slate-300">Ориентир комм. платежей в мес:</span>
+                                <span class="font-bold text-white font-mono" id="utilityVal">15 000 ₽</span>
+                            </div>
+                            <input id="utilitySlider" type="range" min="5000" max="40000" step="1000" value="15000" class="w-full h-2 bg-vesomo-grayDark rounded-lg appearance-none cursor-pointer accent-[#FF5A00]">
+                            <div class="flex justify-between text-[11px] text-slate-500 mt-1">
+                                <span>5 000 ₽</span>
+                                <span>15 000 ₽ (ср.)</span>
+                                <span>40 000 ₽ (с мощностями)</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-vesomo-dark/70 p-4 rounded-xl border border-vesomo-grayBorder/40 text-xs text-slate-400 leading-relaxed">
+                            💡 <span class="text-white font-semibold">Базовые параметры:</span> площадь объекта 90 м², фиксированная ставка 3 000 ₽/м² (270 000 ₽/мес). Обеспечительный платеж обсуждается индивидуально.
+                        </div>
+                    </div>
+
+                    <!-- Output Card -->
+                    <div class="lg:col-span-5 bg-vesomo-dark border border-vesomo-grayBorder p-6 rounded-2xl space-y-5">
+                        <div>
+                            <span class="text-xs text-vesomo-muted uppercase">Ежемесячный платеж</span>
+                            <div class="text-3xl font-extrabold text-white font-mono mt-1" id="monthlyTotal">285 000 ₽</div>
+                            <span class="text-[11px] text-slate-400">аренда (270 000 ₽) + эксплуатация/КУ</span>
+                        </div>
+
+                        <div class="pt-4 border-t border-vesomo-grayBorder/50">
+                            <span class="text-xs text-vesomo-muted uppercase">Бюджет на выбранный срок</span>
+                            <div class="text-3xl font-extrabold text-vesomo-orange font-mono mt-1" id="periodTotal">3 135 000 ₽</div>
+                            <span class="text-[11px] text-slate-400">за <span id="periodText">11</span> мес. работы точки</span>
+                        </div>
+
+                        <a href="https://wa.me/79139167210?text=Здравствуйте!%20Хочу%20обсудить%20условия%20аренды%20помещения%2090%20м2%20на%20Красном%20проспекте,%20186" target="_blank" class="w-full inline-flex items-center justify-center space-x-2 bg-vesomo-orange hover:bg-vesomo-orangeHover text-white py-3.5 rounded-xl text-sm font-bold shadow-lg shadow-vesomo-orange/25 transition-all">
+                            <span>Зафиксировать условия</span>
+                            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-vesomo-dark border-t border-vesomo-grayBorder/50 py-16">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+            <div class="space-y-3">
+                <span class="px-4 py-1.5 rounded-full bg-vesomo-orange/15 border border-vesomo-orange/30 text-vesomo-orange font-mono text-xs uppercase tracking-widest font-bold inline-block">
+                    Организация просмотра
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Готовы посмотреть помещение лично?</h2>
+                <p class="text-slate-400 text-sm max-w-xl mx-auto">
+                    Показы осуществляются в удобное для вас время по предварительной договоренности. Предоставим поэтажный план и технические документы.
+                </p>
+            </div>
+
+            <!-- Fast Contact Buttons Row -->
+            <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+                <a href="tel:+79139167210" class="inline-flex items-center space-x-3 bg-vesomo-orange hover:bg-vesomo-orangeHover text-white px-7 py-3.5 rounded-2xl font-bold text-base shadow-xl shadow-vesomo-orange/25 transition-all">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                    <span>+7 (913) 916-72-10</span>
+                </a>
+                <a href="https://wa.me/79139167210?text=Здравствуйте!%20Интересует%20объект%20на%20Красном%20проспекте%20186" target="_blank" class="inline-flex items-center space-x-3 bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3.5 rounded-2xl font-bold text-base transition-all">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="https://vesomo.ru/" target="_blank" class="inline-flex items-center space-x-3 bg-vesomo-grayDark hover:bg-vesomo-grayBorder border border-vesomo-grayBorder text-slate-200 px-6 py-3.5 rounded-2xl font-bold text-base transition-all">
+                    <i data-lucide="globe" class="w-5 h-5 text-vesomo-orange"></i>
+                    <span>vesomo.ru</span>
+                </a>
+            </div>
+
+            <div class="pt-8 border-t border-vesomo-grayBorder/40 text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between">
+                <span>© 2026 VESOMO Real Estate. Все права защищены.</span>
+                <span class="mt-2 sm:mt-0">Новосибирск, Красный проспект, 186</span>
+            </div>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="fixed inset-0 z-50 bg-black/95 hidden items-center justify-center p-4 transition-all">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white/80 hover:text-white bg-white/10 hover:bg-white/20 p-3 rounded-full backdrop-blur-md transition-all">
+            <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+        <img id="lightboxImg" src="" alt="Детальный вид" class="max-w-full max-h-[90vh] object-contain rounded-xl shadow-2xl">
+    </div>
+
+    <script>
+        // Init Lucide Icons
+        lucide.createIcons();
+
+        // Lightbox Logic
+        function openLightbox(src) {
+            const lb = document.getElementById('lightbox');
+            const img = document.getElementById('lightboxImg');
+            img.src = src;
+            lb.classList.remove('hidden');
+            lb.classList.add('flex');
+            document.body.classList.add('lightbox-open');
+        }
+
+        function closeLightbox() {
+            const lb = document.getElementById('lightbox');
+            lb.classList.add('hidden');
+            lb.classList.remove('flex');
+            document.body.classList.remove('lightbox-open');
+        }
+
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
+
+        // Financial Calculator Logic
+        const periodSlider = document.getElementById('periodSlider');
+        const utilitySlider = document.getElementById('utilitySlider');
+        const periodVal = document.getElementById('periodVal');
+        const utilityVal = document.getElementById('utilityVal');
+        const monthlyTotal = document.getElementById('monthlyTotal');
+        const periodTotal = document.getElementById('periodTotal');
+        const periodText = document.getElementById('periodText');
+
+        const BASE_RENT = 270000; // 90 m2 * 3000
+
+        function formatCurrency(num) {
+            return num.toLocaleString('ru-RU') + ' ₽';
+        }
+
+        function updateCalc() {
+            const months = parseInt(periodSlider.value, 10);
+            const utility = parseInt(utilitySlider.value, 10);
+
+            periodVal.innerText = `${months} ${months === 1 ? 'месяц' : (months < 5 ? 'месяца' : 'месяцев')}`;
+            utilityVal.innerText = formatCurrency(utility);
+            periodText.innerText = months;
+
+            const monthly = BASE_RENT + utility;
+            const total = monthly * months;
+
+            monthlyTotal.innerText = formatCurrency(monthly);
+            periodTotal.innerText = formatCurrency(total);
+        }
+
+        periodSlider.addEventListener('input', updateCalc);
+        utilitySlider.addEventListener('input', updateCalc);
+        updateCalc();
+    </script>
+</body>
+</html>
